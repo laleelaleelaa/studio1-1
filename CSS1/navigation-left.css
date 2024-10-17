@@ -1,0 +1,131 @@
+#bar {
+  min-width:300px;
+  width: 40%;
+  height: calc(100% - 100px);
+  background-color: none;
+  padding: 0px 0px 0px 0px;
+  position: fixed;
+  margin: 50px 0px;
+  left: 0;
+  border-right: 10px solid rgba(255,255,255,0);
+  
+  } 
+
+#nav-wrap {
+  float: right;
+  width: 300px;
+  height: 100%;
+  margin: 150px 0px 0px 0px;
+  background-color: none;
+  
+  }
+
+#logo {
+  background-color: none;
+  background-image: url("https://chenlina.be/img/clwhite-square.png");
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  margin: 50px 40px 100px 0px;
+  padding: 0px;
+  opacity: 1;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+}
+
+#name {
+	float: right;
+	right: 0;
+	position: absolute;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #fff;
+	font-weight: 500;
+	margin: 0px 40px 0px 0px;
+} 
+
+#right {
+  display: block;
+  background-color: rgba(255,255,255,0);
+  width: 300px;
+  height: 300px;
+  margin: 100px auto 50px auto;
+  position: absolute;
+  bottom:0;
+
+    }
+
+.sidenav {
+	z-index:10;
+	background-color:none;
+	padding: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.sidenav a, .dropdown-btn {
+	width: 250px;
+	letter-spacing: 1px;
+	display: block;
+	font-family: helvetica;
+	font-weight: 500;
+	font-size: 30px;
+	text-decoration: none;
+	color: rgba(255,255,255,0.4);
+	text-align: right;
+	line-height: 40px;
+	text-transform: uppercase;
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	outline: none;
+
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+	color: #FFF;
+}
+
+
+.active {
+	background-color:none;
+	color:none;
+}
+
+.dropdown-container {
+	display: none;
+	padding-right: 50px;
+	font-size: 15px;
+	margin: 10px 20px 15px 0;
+
+
+}
+
+.dropdown-container a {
+  font-weight: 300;
+	font-size: 12px;
+	line-height: 30px;
+	margin-right: 20px;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.listed {
+	font-family: helvetica;
+	font-weight: 100;}

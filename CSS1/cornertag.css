@@ -1,0 +1,46 @@
+#tagwrap {
+  height: 100%; 
+  width: 50px;
+  background-color:none;
+  margin: 0px 20px;
+  position: fixed;
+  right: 0;
+  
+  } 
+#tag_1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.1);
+  border: 0px solid rgba(0,0,0,1);
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.4);
+  }
+  
+#tag_2 {
+  position: absolute;
+  width: auto;
+  right:0;
+  bottom: 0;
+  height: 250px;
+  margin: 0px 0px 60px 0px;
+  padding: 10px 5px;
+  background-color: rgba(255,255,255,0);
+  border-radius: 5px;
+  text-align: right;
+  line-height: 11px;
+  font-family: "Raleway", serif;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.2);
+  writing-mode: vertical-rl;
+  }

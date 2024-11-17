@@ -1,176 +1,276 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    
-  <title>studio 1/1</title>
+<title>studio 1/1</title>
 
-
-<script src="codings/classie.js"></script>
-<script type="text/javascript" src="codings/fade-in-page.js"></script>
-<link rel="stylesheet" href="codings/fade-in-page.css">
-
-<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon-64x64.ico">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Six+Caps&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="codings/fav4.ico" type="image/x-icon">
-  <link rel="icon" href="codings/fav4.ico" type="image/x-icon">
-  <script src="codings/fader.js"></script>
-    <script src="codings/header.js"></script>
-  <script type="text/javascript" src="codings/LOL.js"></script>
 
-  
-  <style type="text/css">
-  
-body {
-  
-   background: #c2c2c2;
-  font-family: "Quicksand", arial;
-  font-size: 12px;
-  color: #ccc;
-  padding: 0;
-  margin: 0;
-  }
  
-#wrap1 {
-  width: 100%;
-  height: 100%;
-  position: absolute;}  
-
-#background {
-  background-image:;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  opacity: 0.3;
-  }
-  
-#text0 {
-  background-color: none;
-  height: 100%;
-  width: 700px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  border-left: 0Px solid rgba(255,255,255,0.3);
-  border-right: 0Px solid rgba(255,255,255,0.3);
-  display: flex;
-  justify-content: center;
-}
-  
-#N_name {
-  background-color:none;
-  padding: 0px 00px;
-  width: 600px;
-  height: 300px;
-  position:relative;
-  top: 50%;
-  display: inline-block;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#holder {
-  background-color: yellow;
-  margin: 0;
-  position: absolute;
-  width: 600px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  }
-  
-#holder #thought-line, #thought-text {
-  transition: opacity 0.5s ease-in-out;
-  }
-
-#holder #thought-line {
-  position:absolute;
-  opacity: 1;
-  font-family: times new roman;
-  font-size: 50px;
-  text-transform: lowercase;
-  letter-spacing: 1px;
-  font-weight: normal;
-  color: rgba(0,0,0,1);
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display:inline-block;
-  
-  }
-  
-#holder #thought-text {
-  position:absolute;
-  opacity: 0;
-  font-family: helvetica;
-  font-size: 12px;
-  text-transform: none;
-  letter-spacing: 1px;
-  color: rgba(0,0,0,1);
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display:inline-block;
-  }
-  
-#holder:hover #thought-line { 
-  opacity: 0;
-  }
-  
-#holder:hover #thought-text {
-  opacity: 1;
-  }
- 
-
-  </style>
-
-
+<script src="codings/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 10,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
 </head>
 
+
+
+
+<style type="text/css">
+
+body {
+  background-color: #f1f1f1;
+  color: #505050;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 20px;
+  color: rgba(0,0,0);
+  line-height: 1;
+  font-weight: 700;
+  padding: 0px 0px 15px 0px;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240,240,240, 1);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+  header #logo {
+  margin: auto;
+  width: 400px;
+  background-color: none;
+  text-align: center;
+  height: 150px;
+  font-family: "Times new roman", sans-serif;
+  font-size: 60px;
+  color: #000;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+  header #links {
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  padding: 20px 40px 0px 0px;
+  background-color: transparent;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  }
+  header nav a {
+  text-decoration: none;
+  display: inline-block;
+  float:right;
+  padding: 5px 0px 5px 0px;
+  margin: 0px 0px 0px 30px;
+  background-color: transparent;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+}
+    header nav a:hover {
+      color: black;
+      background-color:none;
+      border-bottom: 2px solid black}
+
+  header.smaller {
+    height: 75px;
+    font-size: 60px;
+    color: #000;
+    font-weight: 400;
+    background-color: #f1f1f1;
+    position: fixed;
+  }
+
+  header.smaller div#logo {
+    position: absolute;
+    left: 0px;
+    margin: 0px 0px 0px 100px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+    }
+
+#main {
+  background-color: none;
+}
+
+#welcomeimg {
+  background-image: url("img/img1.png");
+  background-color: #c2c2c2;
+  opacity: 0.5;
+  width: 100%;
+  height: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+  position: relative;
+}
+#content {
+  padding: 0px 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto 50px auto;
+  padding: 0px 0px 0px 0px;
+}
+
+
+#footer {
+  background-color: transparent;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  padding: 20px 0px ;
+ }
+
+#info-bar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#footer-left, #footer-right {
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  width: 300px;
+  display: inline-block;
+}
+
+
+#footer-left {
+  float: left;
+  background-color: transparent;
+  padding: 20px 0px 20px 20px;
+  color: #fff;
+}
+
+#footer-right {
+  float: right;
+  background-color: transparent;
+  text-align: right;
+  padding: 20px 20px 20px 0px;
+  color: rgba(0,0,0,0.3);
+}
+
+
+
+</style>
+
+
+
 <body>
-  <svg id="fader"></svg>
-  <script>
-            fadeInPage();
-  </script>
 
+<div id="wrapper">
 
-  <div id="background">
-  </div>
-
-<div id="wrap1">
-  <div id="text0">
-    
-    <div id="N_name">
-      
-        <div id="holder">
-          <div id="thought-line">studio <b>1/1</b></div>
-          <div id="thought-text">
-          <b>studio 1/1</b><br>in service of architectural design, one to one.<br><br>
- 
-        
-          </div>
+<header>
+        <div id="logo">
+            studio <b>1/1</b>
         </div>
-      </div>
+        <div id="links">
+          <nav>
+            <a href="index.html#contact">contact</a>
+            <a href="index.html#projects">projects</a>
+            <a href="index.html#about">about</a>
+          </nav>
+        </div>
+</header><!-- /header -->
 
+<div id="main">
+  <div id="welcomeimg">
   </div>
+    <div id="content">
+
+            <div class="container" id="about">
+                <h1>about</h1>
+                <p>    
+                  studio 1/1<br>
+                  in service of architectural design, one to one.<br>
+                  <br>
+                  /beliefs/<br>
+                  Design is driven by personal values and needs.<br>
+                  Design is to be in service of a user.<br>
+                  Design requires a strong empathy and a deep understanding.<br>
+                  <br>
+
+                  </p>
+              </div>
+
+
+              <div class="container" id="projects">
+              <h1>projects</h1>
+                <p>1. Frigne, Sint-Lievens-Houtem 2024
+            </div>
+
+          <div class="container" id="contact">
+              <h1>contact</h1>
+              <p>For any inquiries, do not hesitate to reach out to us.</p>
+              <p>E: info@studio1-1.be<br>
+              T: +324 88 37 97 98<br>
+              A: Dendermondsesteenweg 60, 9000 GENT (BE)<br>
+              BTW: BE0 761 388 731<br>
+              <br>
+              Registered on the list of the Order of Architects of East-Flanders, Belgium.
+            </p>
+          </div>
+
+
+
+
+    </div>
+</div>
 </div>
 
+<div id="footer">
+  <div id="info-bar">
+  <div id="footer-left">website by CL</div>
+  <div id="footer-right">copyright © 2024 <b>studio 1/1</b></div>
+</div>
+</div>
 
 </body>
 </html>
-<script>
-$(document).ready(function(){
-  $("#N_center").fadeIn('slow');
-})
-</script>

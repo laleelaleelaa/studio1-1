@@ -2,17 +2,16 @@
 	width: 100%;
 	letter-spacing: 1px;
 	display: block;
-	font-family: helvetica;
+	font-family: "helvetica neue", sans-serif;
 	font-weight: 600;
 	font-size: 14px;
 	text-decoration: none;
-	background-color:transparent;
+	background-color: transparent;
 	text-align: left;
-	line-height: 35px;
-	text-transform: uppercase;
+	line-height: 20px;
 	border: none;
-	padding: 0;
-	margin: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	cursor: pointer;
 	outline: none;
 
@@ -20,73 +19,69 @@
 
 .pjtdropdown {
 	background-color: rgba(255,255,255,0);
-	color: rgba(255,255,255,0.5);
-	margin: 0px 0px;
+	color: #505050;
+	margin: 5px 0px;
 	padding: 1px 0px;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-
 }
 
 .pjtdropdown:hover {
-	color: rgba(255,255,255,1);
-  border-bottom: 1px solid #fff;
+	color: rgba(150,150,150,1);
+
 }
 
 .pjtdropdown:active {
-	color: rgba(255,255,255,1);
-  border-bottom: 1px solid #fff;
+	color: rgba(150,150,150,1);;
 }
 
 .dropdown-pjt-container {
 	display: none;
 	padding: 0px 10px 0px 15px;
 	margin: 10px 0 15px 0;
+	border-bottom: 1px solid #aaa;
 }
 
 .pjt-info {
-	font-family:  helvetica, serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.8);
+font-family:  "helvetica neue", sans-serif;
+  font-size: 13px;
+  line-height: auto;
   padding: 0px 20px;
-  margin: 20px 20px 40px 0px;
+  margin: 0px 20px 0px 0px;
 }
 
 .pjt-info a:link, .pjt-info a:visited, .pjt-info a:active {
-	color: rgba(255,255,255,0.4);
+	color: rgba(150,150,150,1);
 	text-decoration: underline;
 	font-weight:500;
 	text-transform: lowercase;
   }
   
 .pjt-info a:hover {
-	color: rgba(255,255,255,1);
+	color: rgba(150,150,150,1);;
   }
 
 .pjt-des {
-	font-family:  helvetica, serif;
+	font-family:  "helvetica neueu", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   line-height: 22px;
   color: rgba(255,255,255,0.5);
-  padding: 0px 20px 150px 20px;
+  padding: 0px 20px 20px 20px;
   margin: 0px;
  
 }
 
 .pjt-nr {
-	float: left;
-	font-size: 14px;
+	display: inline-block;
+	font-size: 13px;
   padding: 0px 20px 0px 0px;
   font-weight: 300;
 }
 
 .pjt-year {
-	float:right;
-	font-size: 14px;
-	font-weight: 300;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0px 0px 0px 8px;
 }
 
 .pjt-info img {

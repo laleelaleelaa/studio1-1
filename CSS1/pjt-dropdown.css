@@ -36,7 +36,7 @@
 .dropdown-pjt-container {
 	display: none;
 	padding: 0px 10px 0px 15px;
-	margin: 10px 0 15px 0;
+	margin: 10px 0 40px 0;
 	border-bottom: 1px solid #aaa;
 }
 
@@ -64,9 +64,9 @@ font-family:  "helvetica neue", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   line-height: 22px;
-  color: rgba(255,255,255,0.5);
+  color: #505050;
   padding: 0px 20px 20px 20px;
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
  
 }
 

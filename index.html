@@ -50,12 +50,52 @@ body {
   font-size: 13px;
 }
 
+.container-1 {
+  max-width: 880px;
+  display: block;
+  background-color: transparent;
+  margin: 0px auto;
+}
+
+.container-2 {
+  display: block;
+  padding: 80px 0px 0px 0px;
+  max-width: 800px;
+  background-color: transparent;
+  margin: 50px 0px;
+}
+
+.container-3 {
+  max-width: 800px;
+  display: inline-block;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  background-color: transparent;
+}
+
+.bar {
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+  border: none;
+  margin: 25px 20px 0px 0px;
+  float:left;
+}
+
+.container-4 {
+  max-width: 800px;
+  margin: 20px auto 20px auto;
+  padding: 0px 0px 0px 80px;
+  background-color: transparent;
+}
+
 h1 {
   font-size: 20px;
   color: rgba(0,0,0);
   line-height: 1;
   font-weight: 700;
-  padding: 80px 0px 15px 0px;
+  padding: 0px 0px 0px 0px;
+  float: left;
 }
 
 h2 {
@@ -170,11 +210,7 @@ header {
   padding: 0px 50px;
 }
 
-.container {
-  max-width: 800px;
-  margin: 50px auto 50px auto;
-  padding: 0px 0px 0px 0px;
-}
+
 
 #footer {
   background-color: transparent;
@@ -184,6 +220,7 @@ header {
   height: 30px;
   position: relative;
   padding: 20px 0px ;
+  margin-top: 100px;
  }
 
 #info-bar {
@@ -222,6 +259,7 @@ p {
 a:visited, a:active, a:link {
 text-decoration: none;
 color: #505050;
+font-style: normal;
 }
 
 a:hover {
@@ -286,6 +324,10 @@ color: #000;
   margin: 0px 0px 20px 0px;
 }
 
+.pjt-img {
+
+}
+
 </style>
 
 
@@ -308,241 +350,192 @@ color: #000;
 </header><!-- /header -->
 
 <div id="main">
-  <div id="welcomeimg">
-  </div>
+  <div id="welcomeimg"></div>
     <div id="content">
+      <div class="container-1">
 
-            <div class="container" id="about">
-                <h1>about</h1>
-                <p>    
-                  <h2>studio 1/1</h2>
-                  <p>in service of architectural design, one to one.</p>
-                <h2>beliefs</h2>
-                  <p>
-                  Design is driven by personal values and needs.<br>
-                  Design materializes from a personal vision. <br>
-                  Design is to be in service of a user.<br>
-                  Design requires a strong empathy and a deep understanding of that user and its environment.<br>
-                  Design is therefore an intimate practice.<br>
-                </p>
+                    <div class="container-2" id="about">
+                      <div class="container-3">
+                        <div class="bar"></div>
+                        <h1>about</h1>
+                      </div>
 
-                <h2>practice</h2>
-                <p>
-                  studio 1/1 was established in 2024 in Ghent, Belgium by a maker at heart,  
-                  driven by the need to create an environment around her that makes her feel at home,
-                  to build furniture that makes her feel comfortable, to craft objects that hold a personal 
-                  meaning to her.<br>
-                  <br>
-                  The focus of studio 1/1 lies in creating environments and objects that are dear to their users. We want to approach 
-                  architecture and design with empathy and humility with the utmost respect for the poetics
-                  and beauties of the existing environment around us. We keep an open mind in our design process to allow
-                  for all kinds of possibilities to flourish while authenticity, durability and a strong technical logic
-                  remain at the core of the practice.<br>
-                
-                </p>
-                  <h2>team</h2>
-                <p>
-                  The studio aims to serve as a platform for designers to explore 
-                 and to bring their own creative and unique visions to life. We aim to build a collective of collaborative and supporting partners 
-                 where we teach and learn from each other. We value the people we work with.
-                </p>
-                  <ul>
-                    <li><button class="dropdown-pjt"><div class="team">Name Surname<div class="team-detail">(0000, City XX) / professional title</div></div></button>
-                      <div class="dropdown-team-container">
-                        <div class="team-des">
-                          description 
+                      <div class="container-4">   
+                          <h2>studio 1/1</h2>
+                              <p>in service of architectural design, one to one.</p>
+                          <h2>beliefs</h2>
+                              <p>
+                                Design is driven by personal values and needs.<br>
+                                Design materializes from a personal vision. <br>
+                                Design is to be in service of a user.<br>
+                                Design requires a strong empathy and a deep understanding of that user and its environment.<br>
+                                Design is therefore an intimate practice.<br>
+                              </p>
+
+                          <h2>practice</h2>
+                              <p>
+                                studio 1/1 was established in 2024 in Ghent, Belgium by a maker at heart,  
+                                driven by the need to create an environment around her that makes her feel at home,
+                                to build furniture that makes her feel comfortable, to craft objects that hold a personal 
+                                meaning to her.<br>
+                                <br>
+                                Our mission is to create environments and objects that are dear to their users. We want to approach 
+                                architecture and design with empathy and humility with the utmost respect for the poetics
+                                and beauties of the existing environment around us. We keep an open mind in our design process to allow
+                                for all kinds of possibilities to flourish while authenticity, durability and a strong technical logic
+                                remain at the core of the practice.<br>
+                              
+                              </p>
+                          <h2>team</h2>
+                              <p>
+                                The studio serves as a platform for designers to explore and to bring their own creative and unique visions to life. 
+                                We aim to build a collective of collaborative partners with each their own specialties and skills where we
+                                emphasize on personal growth in a team-orientated community.
+                              </p>
+                                            <ul>
+                                                        <li><button class="dropdown-pjt"><div class="team">Name Surname<div class="team-detail">(0000, City XX) / professional title</div></div></button>
+                                                          <div class="dropdown-team-container">
+                                                            <div class="team-des">
+                                                              description 
+                                                            </div>
+                                                          </div>
+                                                        </li>
+
+                                                        <li><button class="dropdown-pjt"><div class="team">Lina Chen<div class="team-detail">(1995, Gent, BE) / founder, architect</div></div></button>
+                                                          <div class="dropdown-team-container">
+                                                            <div class="team-des">
+                                                              During her time at Coussée Goris Huyghe architecten, Lina has gained experience
+                                                              and knowledge from challenging projects such as the renovation of the highrise Belgacomtoren in Gent.
+                                                              Additionally, she has worked on a variety of projects she had immersed herself deeply in the 
+                                                              design process from overall concept to the smallest construction details.<br>
+                                                              <br>
+                                                              <a href="https://www.chenlina.be/" target="blank">&#10095 visit www.chenlina.be</a>
+                                                            </div>
+                                                          </div>
+                                                        </li>
+                                          </ul>
+
+                          <h3>&#10095 Want to collaborate or join us?</h3>
+                              <p>
+                                studio 1/1 is still a very young but ambitious establishment and is open for partnerships. Our ambition is to build a
+                                community that offers opportunities for young designers to grow on a personal level.    
+                                If your values and ambitions align with those of studio 1/1, feel free to apply for a possible collaboration or become part of the practice.<br>
+                                
+                                <br>
+                                Send your motivation letter, CV and portfolio to <a href="mailto:info@studio1-1.be" class="link-2">info@studio1-1.be</a> and 
+                                we will get back to you as soon as possible.<br>
+                              </p>
+                      </div>
+                    </div>
+
+                    <div class="container-2"  id="projects">
+                        <div class="container-3">
+                          <div class="bar"></div>
+                          <h1>projects</h1>
+                        </div>
+
+                        <div class="container-4">
+                                  <button class="dropdown-pjt"><div class="pjtdropdown">003. PROJECT NAME<div class="pjt-year">/ City Name (XX) 0000</div></div></button>
+                                  <div class="dropdown-pjt-container">
+                                    <br>
+                                    <div class="pjt-info">
+                                      
+                                      <b>description</b><br>
+                                      <br>
+                                      location: City Name, Country<br>
+                                      start: 0000<br>
+                                      <br>
+                                    </div>
+                                    <div class="pjt-des">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                  </div>
+
+
+                                  <button class="dropdown-pjt"><div class="pjtdropdown">002. FRIGNE<div class="pjt-year">/ Sint-Lievens-Houtem (BE) 2024</div></div></button>
+                                  <div class="dropdown-pjt-container">
+                                    <br>
+                                    <div class="pjt-info">
+                                      
+                                      <b>new construction of a private house with separate garage building and horse stable</b><br>
+                                      <br>
+                                      location: Sint-Lievens-Houtem, Belgium<br>
+                                      start: 2024<br>
+                                      <img src="img/002-Frigne_001.png" class="pjt-img">
+                                    </div>
+                                    <div class="pjt-des">
+                                      Under construction, more info soon.
+                                    </div>
+                                  </div>
+
+
+
+                                  <button class="dropdown-pjt"><div class="pjtdropdown">001. 5860<div class="pjt-year">/ Gent (BE) 2024</div></div></button>
+                                  <div class="dropdown-pjt-container">
+                                    <br>
+                                    <div class="pjt-info">
+                                      
+                                      <b>interior design of a private house</b><br>
+                                      <br>
+                                      location: Gent, Belgium<br>
+                                      start: 2024<br>
+                                      <br>
+                                      
+                                    </div>
+                                    <div class="pjt-des">
+                                      custom furniture for dressing and bathroom<br>
+                                    </div>
+                                  </div>
+                                
+
+                                  <script>
+
+                                    var dropdown = document.getElementsByClassName("dropdown-pjt");
+                                    var i;
+                                    
+                                    for (i = 0; i < dropdown.length; i++) {
+                                      dropdown[i].addEventListener("click", function() {
+                                      this.classList.toggle("active");
+                                      var dropdownContent = this.nextElementSibling;
+                                      if (dropdownContent.style.display === "block") {
+                                      dropdownContent.style.display = "none";
+                                      } else {
+                                      dropdownContent.style.display = "block";
+                                      }
+                                      });
+                                    }
+                                    </script>
+                          </div>
+                    </div>
+
+
+                      <div class="container-2" id="contact">
+                        <div class="container-3">
+                          <div class="bar"></div>
+                          <h1>contact</h1>
+                        </div>
+
+                        <div class="container-4">
+                            <p>For any inquiries, do not hesitate to reach out.</p>
+                            <p>
+                              studio 1/1<br>
+                              <a href="mailto:info@studio1-1.be">info@studio1-1.be</a><br>
+                              +324 88 37 97 98<br>
+                              Dendermondsesteenweg 60, 9000 GENT (BE)<br>
+                            BTW BE0 761 388 731<br>
+                            <br>
+
+
+
+                            Registered on the list of the Order of Architects of East-Flanders, Belgium.
+                          </p>
+
+                          <p>
+                            <a href="mailto:info@studio1-1.be">&#10095 send email</a><br>
+                            <a href="https://www.instagram.com/__studio1.1/" target="blank">&#10095 visit instagram</a>
+                          </p>
                         </div>
                       </div>
-                    </li>
-
-                    <li><button class="dropdown-pjt"><div class="team">Name Surname<div class="team-detail">(0000, City XX) / professional title</div></div></button>
-                      <div class="dropdown-team-container">
-                        <div class="team-des">
-                          description 
-                        </div>
-                      </div>
-                    </li>
-
-                    <li><button class="dropdown-pjt"><div class="team">Name Surname<div class="team-detail">(0000, City XX) / professional title</div></div></button>
-                      <div class="dropdown-team-container">
-                        <div class="team-des">
-                          description 
-                        </div>
-                      </div>
-                    </li>
-
-                    <li><button class="dropdown-pjt"><div class="team">Name Surname<div class="team-detail">(0000, City XX) / professional title</div></div></button>
-                      <div class="dropdown-team-container">
-                        <div class="team-des">
-                          description 
-                        </div>
-                      </div>
-                    </li>
-                    
-                    <li><button class="dropdown-pjt"><div class="team">Lina Chen<div class="team-detail">(1995, Gent, BE) / founder, architect</div></div></button>
-                      <div class="dropdown-team-container">
-                        <div class="team-des">
-                          During her time at Coussée Goris Huyghe architecten, Lina has gained experience
-                          and knowledge from challenging projects such as the renovation of the highrise Belgacomtoren in Gent.
-                          Additionally, she has worked on a diversity of small scale projects with the opportunity to work with
-                          different materials and immerse herself deeply in the design process from overall concept to the smallest construction details.
-                        </div>
-                      </div>
-                    </li>
-
-
-
-
-
-                  </ul>
-
-                  <h3>&#10095 Want to collaborate or join us?</h3>
-                <p>
-                  studio 1/1 is still a very young but ambitious establishment and is open for potential partnerships. If your
-                  values align with those of studio 1/1, feel free to apply for a possible collaboration or become part of the team.<br>
-                  <br>
-                  Send your motivation letter, CV and portfolio to <a href="mailto:info@studio1-1.be" class="link-2">info@studio1-1.be</a> and 
-                  we will get back to you as soon as possible.<br>
-                </p>
-
-
-              </div>
-
-
-              <div class="container" id="projects">
-              <h1>projects</h1>
-              
-
-              <button class="dropdown-pjt"><div class="pjtdropdown">005. PROJECT NAME<div class="pjt-year">/ City Name (XX) 0000</div></div></button>
-              <div class="dropdown-pjt-container">
-                <br>
-                <div class="pjt-info">
-                  
-                  description<br>
-                  <br>
-                  location: City Name, Country<br>
-                  start: 0000<br>
-                  <br>
-                </div>
-                <div class="pjt-des">
-                  
-                </div>
-              </div>
-
-
-                <button class="dropdown-pjt"><div class="pjtdropdown">004. PROJECT NAME<div class="pjt-year">/ City Name (XX) 0000</div></div></button>
-                <div class="dropdown-pjt-container">
-                  <br>
-                  <div class="pjt-info">
-                    
-                    description<br>
-                    <br>
-                    Location: City Name, Country<br>
-                    Start: 0000<br>
-                    <br>
-                  </div>
-                  <div class="pjt-des">
-                    
-                  </div>
-                </div>
-
-
-                <button class="dropdown-pjt"><div class="pjtdropdown">003. PROJECT NAME<div class="pjt-year">/ City Name (XX) 0000</div></div></button>
-                <div class="dropdown-pjt-container">
-                  <br>
-                  <div class="pjt-info">
-                    
-                    description<br>
-                    <br>
-                    location: City Name, Country<br>
-                    start: 0000<br>
-                    <br>
-                  </div>
-                  <div class="pjt-des">
-                    
-                  </div>
-                </div>
-
-
-                <button class="dropdown-pjt"><div class="pjtdropdown">002. FRIGNE<div class="pjt-year">/ Sint-Lievens-Houtem (BE) 2024</div></div></button>
-                <div class="dropdown-pjt-container">
-                  <br>
-                  <div class="pjt-info">
-                    
-                    new construction of a private house with separate garage building and horse stable<br>
-                    <br>
-                    location: Sint-Lievens-Houtem, Belgium<br>
-                    start: 2024<br>
-                    <br>
-                  </div>
-                  <div class="pjt-des">
-                    
-                  </div>
-                </div>
-
-
-
-                <button class="dropdown-pjt"><div class="pjtdropdown">001. 5860<div class="pjt-year">/ Gent (BE) 2024</div></div></button>
-                <div class="dropdown-pjt-container">
-                  <br>
-                  <div class="pjt-info">
-                    
-                    interior design of a private house<br>
-                    custom furniture for dressing and bathroom<br>
-                    <br>
-                    location: Gent, Belgium<br>
-                    start: 2024<br>
-                    <br>
-                  </div>
-                  <div class="pjt-des">
-                    
-                  </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <script>
-
-                  var dropdown = document.getElementsByClassName("dropdown-pjt");
-                  var i;
-                  
-                  for (i = 0; i < dropdown.length; i++) {
-                    dropdown[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var dropdownContent = this.nextElementSibling;
-                    if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                    } else {
-                    dropdownContent.style.display = "block";
-                    }
-                    });
-                  }
-                  </script>
-
-            </div>
-
-          <div class="container" id="contact">
-              <h1>contact</h1>
-              <p>For any inquiries, do not hesitate to reach out.</p>
-              <p>
-                <a href="mailto:info@studio1-1.be">info@studio1-1.be</a><br>
-                +324 88 37 97 98<br>
-                Dendermondsesteenweg 60, 9000 GENT (BE)<br>
-            <br>
-              BTW BE0 761 388 731<br>
-              <br>
-              Registered on the list of the Order of Architects of East-Flanders, Belgium.
-            </p>
-
-            <p><a href="https://www.instagram.com/__studio1.1/" target="blank">&#10095 visit instagram</a></p>
-          </div>
 
 
 

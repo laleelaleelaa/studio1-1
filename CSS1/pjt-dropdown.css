@@ -33,6 +33,25 @@
 	color: rgba(150,150,150,1);;
 }
 
+.pjt-no-dropdown {
+	background-color: rgba(255,255,255,0);
+	color: #505050;
+	margin: 5px 0px;
+	padding: 1px 0px;
+	width: 100%;
+	letter-spacing: 1px;
+	display: block;
+	font-family: "helvetica neue", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	background-color: transparent;
+	text-align: left;
+	line-height: 20px;
+	border: none;
+	outline: none;
+}
+
 .dropdown-pjt-container {
 	display: none;
 	padding: 0px 10px 0px 15px;

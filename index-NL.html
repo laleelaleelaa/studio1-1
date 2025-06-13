@@ -649,7 +649,6 @@ Hoewel hij een diepe waardering heeft voor vintage design, is Gheerwijn ook gefa
                                   We nemen zo spoedig mogelijk contact met je op.<br>
                                     Om een correcte inschatting te maken gelieve volgende info te vermelden in de projectomschrijving:<br>
                                     <br>
-                                    &#9758; adres<br>
                                     &#9758; type project: nieuwbouw, renovatie, interieur, meubel op maat, ...<br>
                                     &#9758; omvang van het project: oppervlakte, aantal verdiepingen, ...<br>
                                     &#9758; beschikbaar budget<br>
@@ -668,6 +667,8 @@ Hoewel hij een diepe waardering heeft voor vintage design, is Gheerwijn ook gefa
                                     <input type="text" name="from_name" placeholder="jouw naam" required><br>
                                     <input type="email" name="reply_to" placeholder="jouw email adres" required><br>
                                     <input type="tel" name="user_phone" placeholder="jouw telefoonnumer" required><br>
+                                    <input type="tel" name="user_address" placeholder="adres" required><br>
+                                    <input type="tel" name="title" placeholder="projecttittel" required><br>
                                     <textarea name="message" placeholder="projectomschrijving" required></textarea><br>
                                     <button type="submit" id="send-button">verstuur bericht</button>
                                   </form>
@@ -678,16 +679,13 @@ Hoewel hij een diepe waardering heeft voor vintage design, is Gheerwijn ook gefa
 
                                       emailjs.sendForm('service_1e3iput', 'template_rei2um7', this, 'DASJZOHa4O2HHbVi3')
                                         .then(function () {
-                                          alert('Bedankt, je bericht werd verzonden! We nemen binnenkort contact met je op.');
+                                          alert('Bedankt, je bericht werd verzonden! Een bevestigingsmail werd zonet naar je mailadres verstuurd. We nemen binnenkort contact met je op.');
                                         }, function (error) {
                                           console.error('FAILED...', error);
                                         });
                                     });
 
                                   </script>
-                                  <p>
-                                  OPGELET: Zorg ervoor dat jouw contactgegevens correct zijn. We kunnen geen contact met je opnemen als je contactgegevens foutief zijn.
-                                </p>
 
                         </div>
                       </div>

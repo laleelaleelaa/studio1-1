@@ -1,4 +1,4 @@
-                                                               <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,8 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="CSS1/pjt-dropdown.css">
- 
+ <link rel="stylesheet" href="CSS1/slideshow.css">
 <script src="codings/classie.js"></script>
+<script src="codings/fader.js"></script>
 <script>
     function init() {
         window.addEventListener('scroll', function(e){
@@ -124,6 +125,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
   -webkit-transition: all 0.7s;
   -moz-transition: all 0.7s;
   -ms-transition: all 0.7s;
@@ -214,7 +216,7 @@ background-color: #000;
 }
 
 #welcomeimg {
-  background-image: url("img/img1.png");
+  background-image: url("img/Angel3.jpg");
   background-color: #c2c2c2;
   opacity: 0.5;
   width: 100%;
@@ -228,8 +230,6 @@ background-color: #000;
 #content {
   padding: 0px 50px;
 }
-
-
 
 #footer {
   background-color: transparent;
@@ -271,7 +271,7 @@ background-color: #000;
   color: rgba(0,0,0,0.3);
 }
 
-p {
+div.pjt-info p {
   margin: 20px 10px 30px 10px;
 }
 
@@ -344,7 +344,8 @@ color: #000;
 }
 
 .pjt-img {
-
+width: 100%;
+margin: 20px 0px;
 }
 
 input {
@@ -399,12 +400,12 @@ font-size: 15px;
 letter-spacing: 1px;
 }
 
-
 </style>
 
 
 
 <body>
+
 
 <div id="wrapper">
 
@@ -418,14 +419,83 @@ letter-spacing: 1px;
             <a href="index.html#contact">contact</a>
             <a href="index.html#about">about</a>
             <a href="index.html#news">news</a>
-            <a href="index.html#projects">projects</a>            
+            <a href="index.html#projects">projects</a>
+            <a href="index.html#gallery">gallery</a>                 
           </nav>
            
         </div>
 </header><!-- /header -->
 
+
+
 <div id="main">
+
   <div id="welcomeimg"></div>
+      <div id="gallery">
+              
+
+          <script>
+            (function(){
+            var bsa = document.createElement('script');
+            bsa.async = true;
+            bsa.src = '//s3.buysellads.com/ac/bsa.js';
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+            })();
+          </script>
+
+        <div id="slideshow">
+          <ul id="slides">
+
+            <li class=" fader-slide fader-fade">
+              <div id="slide-content" style="background-image: url('img/InSearchOfTheAtmospheric_22.jpg');" class="slide-background-image">
+                <div class="on-hover-slide">
+                  <div class="slide-textbox">
+                    <h4>1/1</h4>
+                    <p>
+                      in service of architectural design, one to one.
+                    </p>
+                  </div>
+                </div> 
+              </div>
+            </li>
+
+
+            <li class=" fader-slide fader-fade">
+              <div id="slide-content" style="background-image: url('img/InSearchOfTheAtmospheric_09.jpg');" class="slide-background-image">
+                <div class="on-hover-slide">
+                  <div class="slide-textbox">
+                    <h4>1/1</h4>
+                  </div>
+                </div> 
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div id="pagination-box">
+                <ol id="pagination">
+                  <li class></li>
+                  <li class></li>
+                </ol>
+            </div>
+
+    <script>
+      var ss = new TINY.fader.init('ss', {
+        id: 'slides',
+        auto: 4,
+        resume: true,
+        navid: 'pagination',
+        navEvent: 'mouseover',
+        activeClass: 'current',
+        pauseHover: true
+      });
+    </script>
+
+    </div>
+
+
+
     <div id="content">
       <div class="container-1">
 
@@ -538,6 +608,7 @@ letter-spacing: 1px;
                                     </div>
                                     <div class="pjt-des">
                                       under construction, more info soon.
+                                      <img src="img/002-Frigne_001.png" class="pjt-img">
                                     </div>
                                   </div>
 
@@ -557,6 +628,7 @@ letter-spacing: 1px;
                                     </div>
                                     <div class="pjt-des">
                                       made to measure furniture for a dressing and bathroom<br>
+                                      <img src="img/001-H60_001.png" class="pjt-img">
                                     </div>
                                   </div>
                                 

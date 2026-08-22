@@ -70,7 +70,7 @@ TINY.fader = function() {
 	// Start the automatic rotation
 	init.prototype.play = function() {
 		if ( !p.slides.ai ) {
-			p.slides.ai = setInterval(new Function(p.n + ".move(1, 1)"), p.auto * 1000);
+			p.slides.ai = setInterval(new Function(p.n + ".move(1, 1)"), p.auto * 800);
 		}
 	};
 	
@@ -117,7 +117,7 @@ TINY.fader = function() {
 						slide.opacity = slide.style.opacity = 0;
 						slide.style.filter = "alpha(opacity=0)";
 					}
-					slide.si = setInterval(new Function(p.n + ".fade(" + index + ", " + auto + ")"), ( (p.duration * 1000) / 10 ));
+					slide.si = setInterval(new Function(p.n + ".fade(" + index + ", " + auto + ")"), ( (p.duration * 800) / 10 ));
 				}
 				p.current = index;
 			}
